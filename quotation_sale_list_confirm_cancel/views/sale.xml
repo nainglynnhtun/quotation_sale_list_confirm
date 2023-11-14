@@ -26,7 +26,13 @@
                 name="action_create_invoice"
                 type="object"
                 icon="fa-pencil-square-o"
-                states="draft,sale,sent" 
+                attrs="{'invisible': [('invoice_status', '!=', 'to invoice')]}"
+        />
+        <button string="Create Invoice"
+                name="action_create_invoice"
+                type="object"
+                icon="fa-pencil-square-o"
+                attrs="{'invisible': ['|',('invoice_status', '!=', 'no'), ('state', '!=', 'sale')]}"
         />
       </field>
     </field>
@@ -42,7 +48,14 @@
                     name="action_create_invoice"
                     type="object"
                     icon="fa-pencil-square-o"
-                    />
+                    attrs="{'invisible': [('invoice_status', '!=', 'to invoice')]}"
+            />
+            <button string="Create Invoice"
+                    name="action_create_invoice"
+                    type="object"
+                    icon="fa-pencil-square-o"
+                    attrs="{'invisible': ['|',('invoice_status', '!=', 'no'), ('state', '!=', 'sale')]}"
+            />
             <button string="Set to Quotation"
                     name="action_draft" 
                     states="cancel" 

@@ -2,7 +2,7 @@
 
 {
     'name': 'Sale/Quotation Confirm, Cancel, Set to Quotation, and Create Invoice from List View.',
-    'version': '16.0.0.0.0',
+    'version': '16.0.0.0.1',
     'category': 'Sales/Sales',
     'license': 'LGPL-3',
     'summary': """Confirm, Cancel, Set to Quotation, and Create Invoice your Sale/Quotation from list views""",
